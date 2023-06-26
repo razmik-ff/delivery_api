@@ -1,7 +1,7 @@
 from sqlalchemy.orm import Session
 from sqlalchemy.dialects.postgresql import UUID
 
-from . import models, schemas
+import models, schemas
 
 
 def get_company(db: Session, company_id: UUID):

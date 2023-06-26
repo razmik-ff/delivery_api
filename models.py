@@ -9,6 +9,7 @@ class CompanyType:
     RESTAURANT = "Restaurant"
     PHARMACY = "Pharmacy"
     FLOWERS = "Flowers"
+    OTHER = "Other"
 
 
 class Company(Base):

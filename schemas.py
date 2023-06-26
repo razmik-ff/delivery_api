@@ -1,5 +1,5 @@
 from pydantic import BaseModel
-from sqlalchemy.dialects.postgresql import UUID
+from uuid import UUID
 
 
 class CompanyBase(BaseModel):
@@ -8,7 +8,7 @@ class CompanyBase(BaseModel):
     type: str
     address: str
     tel: str
-    logo: str
+    logo: str = None
 
 
 class CompanyCreate(CompanyBase):
